@@ -33,7 +33,7 @@ class DateGridViewModel: ObservableObject {
     }
     
     private var weeks: [Date] {
-        calendar.generateDates( inside: interval,matching: DateComponents(hour: 0, minute: 0, second:0, weekday: 2) )
+        calendar.generateDates( inside: interval,matching: DateComponents(hour: 0, minute: 0, second:0, weekday: 1) )
     }
     
     func days(for monthOrWeek: Date) -> [Date] {
